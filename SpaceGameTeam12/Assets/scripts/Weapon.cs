@@ -22,7 +22,7 @@ public class Weapon : MonoBehaviour
     void Update()
     {
         time += Time.deltaTime;
-        if (Input.GetMouseButtonDown(0) && time >= shootDelay)
+        if (Input.GetMouseButtonDown(0) && time >= shootDelay && haveweapon)
         {
             Shoot();
             time = 0f;
